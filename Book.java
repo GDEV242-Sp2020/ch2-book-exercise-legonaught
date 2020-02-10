@@ -48,4 +48,13 @@ class Book
     {
         System.out.println(title);
     }
+    
+    public void printDetails()
+    {
+        System.out.println("----------------------------------------");
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Page Count: " + pages);
+        System.out.println("----------------------------------------");
+    }
 }
