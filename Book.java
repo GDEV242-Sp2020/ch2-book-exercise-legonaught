@@ -31,4 +31,14 @@ class Book
     {
         return title;
     }
+    
+    public void printAuthor()
+    {
+        System.out.println(author);
+    }
+    
+    public void printTitle()
+    {
+        System.out.println(title);
+    }
 }
