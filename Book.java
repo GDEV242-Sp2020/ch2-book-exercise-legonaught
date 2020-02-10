@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
+    private int  borrowed;
 
     /**
      * Set the author and title fields when this object
@@ -46,6 +47,11 @@ class Book
         return refNumber;
     }
     
+    public int getBorrowed()
+    {
+        return borrowed;
+    }
+    
     public void printAuthor()
     {
         System.out.println(author);
@@ -70,6 +76,7 @@ class Book
         {
             System.out.println("ZZZ");
         }
+        System.out.println("# times obtained from library: " + borrowed);
         System.out.println("----------------------------------------");
     }
     
@@ -83,5 +90,10 @@ class Book
         {
             System.out.println("Refrence ID must be at least 3 digits.");
         }
+    }
+    
+    public void borrow()
+    {
+        borrowed += 1;
     }
 }
