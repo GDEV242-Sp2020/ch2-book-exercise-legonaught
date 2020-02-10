@@ -75,6 +75,13 @@ class Book
     
     public void setRefNumber(String ref)
     {
-        ref = refNumber;
+        if(ref.length() >= 3)
+        {
+            refNumber = ref;
+        }
+        else
+        {
+            System.out.println("Refrence ID must be at least 3 digits.");
+        }
     }
 }
