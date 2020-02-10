@@ -62,6 +62,14 @@ class Book
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("Page Count: " + pages);
+        if(refNumber != "")
+        {
+            System.out.println("Refrence ID: " + refNumber);
+        }
+        else
+        {
+            System.out.println("ZZZ");
+        }
         System.out.println("----------------------------------------");
     }
     
